@@ -5,7 +5,7 @@
 #define ERROR_SOC "State of Charge out of range!\n"
 #define ERROR_CHARGE "Charge Rate out of range!\n"
 
-#define WARNING_TEMP_LOW "Warning: Approaching lower temperature limit\n"
+#define WARNING_TEMP_LOW "Warning: Approaching lower temperature limit\n
 #define WARNING_TEMP_HIGH "Warning: Approaching upper temperature limit\n"
 
 #define WARNING_SOC_LOW "Warning: Approaching discharge\n"
