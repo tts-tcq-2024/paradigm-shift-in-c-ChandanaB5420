@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "parameter_checks.h"
+#include "parameter.h"
 #include "warning_system.h"
 
 int checkParameter(float value, float min, float max, const char* errorMessage, const char* lowWarning, const char* highWarning) 
