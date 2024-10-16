@@ -62,7 +62,8 @@ void testChargeRateWarnings() {
 }
 
 // Function to run all tests
-void runTests() {
+void runTests() 
+{
     testValidCases();
     testInvalidTemperature();
     testInvalidSoC();
