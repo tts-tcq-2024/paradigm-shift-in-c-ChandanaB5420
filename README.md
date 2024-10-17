@@ -59,3 +59,16 @@ Shorten the Semantic distance
 - Functional to express relation between input and output
 - Object oriented to encapsulate state with actions
 - Apect oriented to capture repeating aspects
+
+## Extension: Early Warning System
+## Overview
+A 5% tolerance-based early warning feature was added for temperature, SoC, and charge rate. This warns users when approaching upper or lower limits.
+
+## Modifications
+Warning Logic: Introduced a 5% tolerance near the upper/lower bounds for temperature, SoC, and charge rate.
+Modularity: Customers can adjust or disable warnings for specific parameters easily in the future.
+Refactoring: Reduced cyclomatic complexity by removing conditional statements using arithmetic and arrays. Separated pure functions from I/O for better maintainability.
+
+## Test Coverage
+Test cases were expanded to cover edge conditions, early warnings, and breaches for all parameters.
+  
