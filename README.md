@@ -66,7 +66,9 @@ A 5% tolerance-based early warning feature was added for temperature, SoC, and c
 
 ## Modifications
 **1. Warning Logic:** Introduced a 5% tolerance near the upper/lower bounds for temperature, SoC, and charge rate.
+
 **2. Modularity:** Customers can adjust or disable warnings for specific parameters easily in the future.
+
 **3. Refactoring:** Reduced cyclomatic complexity by removing conditional statements using arithmetic and arrays. Separated pure functions from I/O for better maintainability.
 
 ## Test Coverage
