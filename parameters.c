@@ -10,7 +10,7 @@ int checkParameter(float value, float min, float max, const char* errorMessage, 
     }
 
     checkLowThreshold(value, min, max, lowWarning);
-    checkHighThreshold(value, max, highWarning);
+    checkHighThreshold(value, min, max, highWarning);
 
     return 1;
 }
