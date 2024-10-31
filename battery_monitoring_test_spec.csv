@@ -1,0 +1,23 @@
+﻿,,,,,,,
+Test Case ID,Test Scenario,Test Case Name,Description,Input Temperature,Input SoC,Input Charge Rate,Expected Output
+TC001,Valid Cases,testValidCases,"Valid temperature, SoC, and charge rate.",25,70,0.7,TRUE
+TC002,Valid Cases,testValidCases,"Minimum valid temperature, valid SoC and charge rate.",0,20,0,TRUE
+TC003,Valid Cases,testValidCases,"Maximum valid temperature, valid SoC and charge rate.",45,80,0.8,TRUE
+TC004,Invalid Temperature,testInvalidTemperature,Invalid negative temperature.,-1,70,0.7,FALSE
+TC005,Invalid Temperature,testInvalidTemperature,Invalid temperature above maximum limit.,46,70,0.7,FALSE
+TC006,Invalid SoC,testInvalidSoC,Invalid SoC below minimum limit.,25,19,0.7,FALSE
+TC007,Invalid SoC,testInvalidSoC,Invalid SoC above maximum limit.,25,81,0.7,FALSE
+TC008,Invalid Charge Rate,testInvalidChargeRate,Invalid charge rate above maximum limit.,25,70,0.9,FALSE
+TC009,Invalid Combinations,testInvalidCombinations,Combination of invalid temperature and SoC.,-1,19,0.9,FALSE
+TC010,Invalid Combinations,testInvalidCombinations,"Combination of invalid temperature, SoC, and charge rate.",46,81,0.9,FALSE
+TC011,Invalid Combinations,testInvalidCombinations,Invalid charge rate at maximum limit.,25,70,1,FALSE
+TC012,Edge Cases,testEdgeCases,Edge case with minimum temperature and invalid SoC.,0,19,0.7,FALSE
+TC013,Edge Cases,testEdgeCases,Edge case with maximum temperature and invalid SoC.,45,81,0.8,FALSE
+TC014,Edge Cases,testEdgeCases,"Valid conditions for temperature, SoC, and charge rate.",25,70,0.8,TRUE
+TC015,Edge Cases,testEdgeCases,Valid conditions with minimum charge rate.,25,70,0,TRUE
+TC016,Temperature Warnings,testTemperatureWarnings,Lower temperature warning should trigger.,1,50,0.5,TRUE
+TC017,Temperature Warnings,testTemperatureWarnings,Upper temperature warning should trigger.,44,50,0.5,TRUE
+TC018,SoC Warnings,testSoCWarrnings,Lower SoC warning should trigger.,25,21,0.5,TRUE
+TC019,SoC Warnings,testSoCWarrnings,Upper SoC warning should trigger.,25,79,0.5,TRUE
+TC020,Charge Rate Warnings,testChargeRateWarnings,Lower charge rate warning should trigger.,25,50,0.02,TRUE
+TC021,Charge Rate Warnings,testChargeRateWarnings,Upper charge rate warning should trigger.,25,50,0.78,TRUE
